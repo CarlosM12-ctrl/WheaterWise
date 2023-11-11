@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Noto+Sans:wght@100&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <script src="https://api.mqcdn.com/sdk/place-search-js/v1.0.0/place-search.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/place-search-js/v1.0.0/place-search.css"/>
+    <title>WeatherWise</title>
+</head>
+<body class="font1 body">
+    <div class="titulo">
+        <div class="tit">
+            <img src="logo.png">
+            <h1 class="titu font1">Weather<u>Wise</u></h1>
+        </div>
+    </div>
+
+    <div class="container">
+    <!--areab corresponde a la sección donde se comenzará la busqueda -->
+        
+        <div class="areab">
+            
+            <i class="fa-solid fa-city"></i>    
+            <input type="text" class="font1" id="texto" placeholder="Buscar ciudad"></input>
+            <button  class="fa-sharp fa-solid fa-magnifying-glass font3"></button>
+        </div>
+        <!--al momento de no encontrar una ciudad o esté mal escrita, se mandará esto al usuario, que es el error section-->
+        <div class="error">
+            <img class="ima" src="./img/404.png">
+            <p>Rayos y tormentas, tu ciudad no está.</p>
+            <button class="fa-sharp fa-solid fa-xmark font3"></button>
+        </div>
+        <!--aquí se mostrará la información relacionada al clima de la ciudad en cuestión-->
+        <div class="climacaja">
+            
+            <img src="">
+            <p class="temperatura"></p>
+            <p class="detalles"></p>
+            <p class="cbuscada"></p>
+            <button class="fa-sharp fa-solid fa-xmark font3"></button>
+        </div>
+        
+        <!--la seccion cdetalles muestra lo que es la humedad y viento que se complementa con climacaja-->
+        <div class="cdetalles">
+            <div class="humedad">
+                <i class="fa-sharp fa-solid fa-droplet"></i>
+                <div class="texto">
+                    <span></span>
+                    <p > Humedad</p>
+                </div>
+            </div>
+            <div class="viento">
+                <i class="fa-sharp fa-solid fa-wind"></i>
+                <div class="texto">
+                    <span></span>
+                    <p >Viento</p>
+                </div>
+            </div>
+        </div>
+        
+   </div>
+   <div class="t2">
+        <h1>Weather<u>Wise</u></h1>
+        <img src="logo.png">
+   </div>
+    <div class="stat">
+        
+        <h1 class="font2">información adicional</h1>
+        
+        <div class="ama">
+            <img src="./img/amanecer.png">
+            <p class="dat">Amanecer</p>
+            <p class="fecha"></p>
+        </div>
+        <div class="ata">
+            <img src="./img/atardecer.png">
+            <p class="dat">Atardecer</p>
+            <p class="fecha2"></p>
+        </div>
+        <div class="map">
+            <div>
+                <iframe width="400" height="300" frameborder="0" src="" scrolling="no">
+                </iframe>
+                <div class="minfo">
+                   <a id="largeMapLink" target="_blank" href="">Ver mapa más grande</a> &nbsp; | &nbsp;
+                   <a id="dirMapLink" target="_blank" href="">Obtener indicaciones</a>
+               </div>
+           </div>
+        </div>
+    </div>
+
+
+   <!--scripts-->
+    <script src="./js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/133ebcd262.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--<script type="module" src="alerts.js"></script>-->    
+<!--CARLOS EDUARDO HERNANDEZ MONTES-->
+</body>
+</html>
